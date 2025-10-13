@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ICV Componentes - Store Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    
+  </head>
+  <body>
+    <header>
+        <div style="margin-left: 2rem;">
+            <img src="assets/images/logo.jpg" alt="logo" class="logo">
+        </div>
+        <div style="position: relative;">
+            <input type="text" id="search" placeholder="Buscar componentes electrónicos...">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+        <div style="margin-right: 2rem;">
+            <span style="color: white; font-size: 1.2rem;">Mi Cuenta</span>
+        </div>
+    </header>
+    <main>
+
+    <div class="container">
+      <section class="cabecera">
+        <h1>¡Bienvenido a ICV Componentes!</h1>
+        <p>
+          Descubre los mejores componentes electrónicos para tus proyectos.
+          <span class="highlight">Calidad garantizada</span>, precios
+          competitivos y envíos rápidos.
+        </p>
+        <a href="#productos">Ver Productos</a>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <div class="feature-icon">⚡</div>
+          <h3>Envío Rápido</h3>
+          <p>Entregamos tus componentes en 24-48h laborables</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🔧</div>
+          <h3>Soporte Técnico</h3>
+          <p>Asistencia experta para elegir los mejores componentes</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💰</div>
+          <h3>Precios Competitivos</h3>
+          <p>Los mejores precios del mercado garantizados</p>
+        </div>
+      </section>
+
+      <section id="productos" class="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <div class="productos-grid">
+          <div class="producto-card">
+            <img
+              src="https://placehold.co/250x180/6a11cb/ffffff?text=Arduino+Uno"
+              alt="Arduino Uno"
+              class="producto-imagen"
+            />
+            <div class="producto-info">
+                <h3 class="producto-nombre">Arduino Uno R3</h3>
+                <div class="producto-precio">€24.99</div>
+                <p class="producto-descripcion">
+                Placa microcontroladora para proyectos electrónicos
+                </p>
+                <a href="#" class="btn-comprar">Comprar Ahora</a>
+            </div>
+            </div>
+
+            <div class="producto-card">
+            <img
+                src="assets/images/raspberry.png"
+                alt="Raspberry Pi"
+                class="producto-imagen"
+            />
+            <div class="producto-info">
+                <h3 class="producto-nombre">Raspberry Pi 4</h3>
+                <div class="producto-precio">€79.99</div>
+                <p class="producto-descripcion">
+                Ordenador de placa única de última generación
+                </p>
+                <a href="pages/raspberry-Pi.html" class="btn-comprar">Comprar Ahora</a>
+            </div>
+            </div>
+
+            <div class="producto-card">
+            <img
+                src="https://placehold.co/250x180/ff6b6b/ffffff?text=Sensor+Temperatura"
+                alt="Sensor Temperatura"
+                class="producto-imagen"
+            />
+            <div class="producto-info">
+                <h3 class="producto-nombre">Sensor DHT22</h3>
+                <div class="producto-precio">€8.49</div>
+                <p class="producto-descripcion">
+                Sensor de temperatura y humedad preciso
+                </p>
+                <a href="#" class="btn-comprar">Comprar Ahora</a>
+            </div>
+            </div>
+
+            <div class="producto-card">
+            <img
+                src="https://placehold.co/250x180/20bf6b/ffffff?text=LED+RGB"
+                alt="LED RGB"
+                class="producto-imagen"
+            />
+            <div class="producto-info">
+                <h3 class="producto-nombre">LED RGB Programable</h3>
+                <div class="producto-precio">€12.99</div>
+                <p class="producto-descripcion">
+                Leds de colores controlables individualmente
+                </p>
+                <a href="#" class="btn-comprar">Comprar Ahora</a>
+            </div>
+            </div>
+        </div>
+        </section>
+    </div>
+</main>
+    <footer>
+        <p>&copy; 2025 ICV Componentes. Todos los derechos reservados.</p>
+        <p>
+        Diseñado con <span style="color: #ff6b6b">❤</span> para entusiastas de
+        la electrónica
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+    </body>
+</html>
