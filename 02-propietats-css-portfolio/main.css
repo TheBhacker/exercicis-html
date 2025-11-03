@@ -1,0 +1,245 @@
+/* ============================================
+          RESET I ESTILS BASE
+============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #334155;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ============================================
+          CONTENIDOR GENERAL
+============================================ */
+.container-portfolio {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+          HEADER AMB IMATGE DE PERFIL
+============================================ */
+header {
+  background-color: #edf4fc;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #93c5fd;
+  margin-bottom: 1rem;
+}
+
+#nom-principal {
+  font-size: 3rem;
+  color: #1e293b;
+  margin-bottom: 0.6rem;
+}
+
+.rol-professional {
+  font-size: 1.5rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ============================================
+          MAIN I SECCIONS
+============================================ */
+main {
+  margin-bottom: 3rem;
+}
+
+section.seccio {
+  margin-bottom: 3rem;
+}
+
+section.seccio > h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+/* ============================================
+          SECCIÓ SOBRE MI
+============================================ */
+section.sobre-mi p {
+  font-size: 1.05rem;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+/* ============================================
+          HABILITATS
+============================================ */
+ul.habilitats-llista {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.habilitats-llista li {
+  background-color: #f8fafc;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.6rem;
+  border-left: 4px solid #cbd5e1;
+  border-radius: 0.3rem;
+}
+
+ul.habilitats-llista li.nivell-expert {
+  border-left-color: #3498db;
+}
+
+ul.habilitats-llista li.nivell-expert strong {
+  color: #2563eb;
+}
+
+ul.habilitats-llista li.nivell-intermig {
+  border-left-color: #93c5fd;
+}
+
+ul.habilitats-llista li.nivell-intermig strong {
+  color: #2563eb;
+}
+
+ul.habilitats-llista li.nivell-basic {
+  border-left-color: #e2e8f0;
+}
+
+ul.habilitats-llista li.nivell-basic strong {
+  color: #64748b;
+}
+
+/* ============================================
+          PROJECTES
+============================================ */
+article.projecte {
+  background-color: #f8fafc;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+article.projecte > h3 {
+  font-size: 1.4rem;
+  color: #2563eb;
+  margin-bottom: 1rem;
+}
+
+article.projecte img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+article.projecte a[href] {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article.projecte a[href]:hover {
+  text-decoration: underline;
+}
+
+article.projecte p {
+  margin-bottom: 0.6rem;
+  color: #475569;
+}
+
+article.projecte p strong {
+  color: #1e293b;
+}
+
+/* ============================================
+          EXPERIÈNCIA I FORMACIÓ
+============================================ */
+div.experiencia-item {
+  margin-bottom: 2rem;
+}
+
+div.experiencia-item h3 {
+  font-size: 1.2rem;
+  color: #1e293b;
+  margin-bottom: 0.2rem;
+}
+
+div.experiencia-item h3 + p {
+  margin-bottom: 0.2rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+div.experiencia-item em {
+  color: #64748b;
+}
+
+div.empresa ~ p {
+  margin-top: 0.6rem;
+  color: #475569;
+}
+
+/* ============================================
+          CONTACTE
+============================================ */
+footer.contacte {
+  background-color: #edf4fc;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+footer.contacte h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+footer.contacte > p {
+  margin-bottom: 1rem;
+  color: #475569;
+}
+
+footer.contacte .info-contacte {
+  margin-top: 1rem;
+}
+
+footer.contacte .info-contacte a,
+footer.contacte .info-contacte span {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer.contacte .info-contacte span {
+  color: #cbd5e1;
+}
+
+footer.contacte a[href^='mailto:'],
+footer.contacte a[href^='tel:'] {
+  color: #3498db;
+}
