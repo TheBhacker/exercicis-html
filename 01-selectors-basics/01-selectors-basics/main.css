@@ -1,0 +1,112 @@
+/* ============================================
+    EXERCICI 1 CSS - Selectors Bàsics
+============================================ */
+
+/* 1. Selector etiqueta - Estils generals*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main, section, aside, footer {
+  display: block;
+}
+
+/* 2. Selector múltiple */
+h1, h2, h3 {
+  color: #0077cc;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+/* 3. Selector d'etiqueta - Estils específics */
+header {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+nav {
+  background-color: #005fa3;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+aside {
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* 4. Selector de classe */
+.important {
+  color: #d40000;
+  font-weight: bold;
+}
+
+.destacada {
+  background-color: #e6f4ff;
+  border-left: 5px solid #0077cc;
+  padding: 1rem;
+}
+
+/* 5. Selector ID */
+#principal {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffcc00;
+  padding: 1rem;
+}
+
+#contacte {
+  font-style: italic;
+  color: #555;
+}
+
