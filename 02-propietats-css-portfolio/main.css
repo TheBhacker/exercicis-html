@@ -13,6 +13,8 @@ body {
   color: #334155;
   line-height: 1.6;
   font-size: 1rem;
+  box-shadow: #aaafb6 4px 4px 8px;
+
 }
 
 /* ============================================
@@ -22,7 +24,6 @@ body {
   max-width: 900px;
   margin: 0 auto;
   background-color: #ffffff;
-  padding: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -32,10 +33,15 @@ body {
 ============================================ */
 header {
   background-color: #edf4fc;
-  padding: 2rem;
-  border-radius: 0.75rem;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: center;
   margin-bottom: 3rem;
+  box-shadow: #aaafb6 4px 4px 8px;
+  border-bottom: #3498db 4px solid;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
 }
 
 header img {
@@ -44,6 +50,7 @@ header img {
   border-radius: 50%;
   border: 4px solid #93c5fd;
   margin-bottom: 1rem;
+  box-shadow: #6d6d6d 4px 4px 8px;
 }
 
 #nom-principal {
@@ -54,8 +61,9 @@ header img {
 
 .rol-professional {
   font-size: 1.5rem;
-  color: #2563eb;
+  color: #4c8bff;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 header p {
@@ -70,6 +78,7 @@ header p {
 ============================================ */
 main {
   margin-bottom: 3rem;
+  padding: 2rem;
 }
 
 section.seccio {
@@ -102,15 +111,17 @@ ul.habilitats-llista {
 }
 
 ul.habilitats-llista li {
-  background-color: #f8fafc;
   padding: 0.6rem 1rem;
   margin-bottom: 0.6rem;
   border-left: 4px solid #cbd5e1;
   border-radius: 0.3rem;
 }
 
+
 ul.habilitats-llista li.nivell-expert {
-  border-left-color: #3498db;
+  border-left-color: #57a5ff;
+  background-color: rgba(52, 152, 219, 0.3);
+  color: black;
 }
 
 ul.habilitats-llista li.nivell-expert strong {
@@ -118,19 +129,23 @@ ul.habilitats-llista li.nivell-expert strong {
 }
 
 ul.habilitats-llista li.nivell-intermig {
-  border-left-color: #93c5fd;
+  border-left-color: #71c6ff;
+  background-color: rgba(52, 152, 219, 0.2);
 }
 
 ul.habilitats-llista li.nivell-intermig strong {
-  color: #2563eb;
+  color: #3498db;
 }
 
 ul.habilitats-llista li.nivell-basic {
-  border-left-color: #e2e8f0;
+  border-left-color: #bad8ff;
+  background-color: rgba(52, 152, 219, 0.1);
 }
 
 ul.habilitats-llista li.nivell-basic strong {
-  color: #64748b;
+  color: #a4c7f7;
+  font-style: italic;
+  font-weight: normal;
 }
 
 /* ============================================
@@ -140,14 +155,20 @@ article.projecte {
   background-color: #f8fafc;
   padding: 1.5rem;
   margin-bottom: 2rem;
-  border-radius: 0.75rem;
-  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  border-top: 1px solid #e2e8f0;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  border-left: 1px solid #e2e8f0;
+  border-right-color: #3498db;
+  border-bottom-color: #3498db;
 }
 
 article.projecte > h3 {
   font-size: 1.4rem;
-  color: #2563eb;
+  color: #000000;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 article.projecte img {
@@ -157,13 +178,18 @@ article.projecte img {
 }
 
 article.projecte a[href] {
-  color: #3498db;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  transition: transform 0.2s;
+  background-color: #000c25; 
 }
 
 article.projecte a[href]:hover {
-  text-decoration: underline;
+  transform: scale(1.05);
 }
 
 article.projecte p {
@@ -180,6 +206,14 @@ article.projecte p strong {
 ============================================ */
 div.experiencia-item {
   margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 1.5rem;
+  border-right: #3498db 6px solid;
+  border-left: #3498db 6px solid;
+  border-bottom: #3498db 1px solid;
+  border-top: #3498db 1px solid;
+
 }
 
 div.experiencia-item h3 {
@@ -209,8 +243,11 @@ div.empresa ~ p {
 footer.contacte {
   background-color: #edf4fc;
   padding: 2rem;
-  border-radius: 0.75rem;
   text-align: center;
+  border-top: #3498db 4px solid;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  box-shadow: #aaafb6 4px 4px 8px;
 }
 
 footer.contacte h2 {
@@ -230,16 +267,29 @@ footer.contacte .info-contacte {
 
 footer.contacte .info-contacte a,
 footer.contacte .info-contacte span {
-  color: #2563eb;
+  color: #3498db;
   text-decoration: none;
   font-weight: bold;
 }
 
 footer.contacte .info-contacte span {
   color: #cbd5e1;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-footer.contacte a[href^='mailto:'],
-footer.contacte a[href^='tel:'] {
+footer.contacte a[href^='mailto:'] {
   color: #3498db;
+  border: #3498db 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #9ed8ff54;
+}
+
+footer.contacte a[href^='tel:'] {
+  color: #000000;
+  border: #000000 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #4949492a;
 }
